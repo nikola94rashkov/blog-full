@@ -1,21 +1,26 @@
-import express from "express";
+import express, { Express, Request, Response } from "express";
 import mongoose from "mongoose";
-import { cors } from "./middlewares/cors";
+import { cors } from "./middleware/cors";
 
-const PORT = 3030;
-const URL = "mongodb://localhost:27017/blogs";
+import { blogController } from "./controllers/blog";
+
+enum ServerData {
+  port = 3030,
+  url = "mongodb://127.0.0.1:27017/",
+}
 
 (async () => {
-  await mongoose.connect(URL);
+  await mongoose.connect(ServerData.url);
 
-  const app = express();
+  const app: Express = express();
 
   app.use(express.json());
   app.use(cors());
+  app.use("/blogs", blogController);
 
-  app.get("/", (req: express.Request, res: express.Response) =>
+  app.get("/", (req: Request, res: Response) =>
     res.json({ message: "rest service operational" })
   );
 
-  app.listen(PORT, () => console.log("REST on 3030"));
+  app.listen(ServerData.port, () => console.log("REST on 3030"));
 })();
