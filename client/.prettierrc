@@ -1,12 +1,6 @@
 {
   "endOfLine": "auto",
-  "importOrder": [
-    "^@react(.*)$",
-    "^@remix(.*)$",
-    "^@polestar(.*)|^@polestar/(.*)",
-    "^~/(.*)$",
-    "^[./].*$"
-  ],
+  "importOrder": ["^@react(.*)$", "^~/(.*)$", "^[./].*$"],
   "importOrderCaseInsensitive": true,
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
