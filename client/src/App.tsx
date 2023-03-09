@@ -2,7 +2,7 @@ import { Form } from './components/FormComponents';
 
 const App = () => {
   const dummyData = {
-    title: 'Form Create Article 5',
+    title: 'Form Create Article',
     fields: [
       {
         type: 'text',
@@ -42,9 +42,9 @@ const App = () => {
       },
       {
         type: 'select',
-        label: 'sex',
-        name: 'sex',
-        testId: 'sex',
+        label: 'gender',
+        name: 'gender',
+        testId: 'gender',
         options: ['male', 'female']
       }
     ],

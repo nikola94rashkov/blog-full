@@ -1,4 +1,3 @@
-import { trimAndCamelCase } from '../../../services';
 import type { Select as SelectInterface } from '../../../types';
 
 export const Select = ({ label, type, testId, name, options, changeHandler }: SelectInterface) => {

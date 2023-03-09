@@ -10,7 +10,7 @@ export const Form = ({ title, fields, buttonText, submitHandler }: FormInterface
       <h2 className="formTitle">{title}</h2>
 
       {fields.map((item, index) =>
-        item.type == 'select' ? (
+        item.type === 'select' ? (
           <Select
             key={item.type + index}
             type={item.type}
