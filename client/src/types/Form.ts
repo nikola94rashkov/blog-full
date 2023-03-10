@@ -18,7 +18,7 @@ export interface Button {
 
 export interface Form {
   title: string;
-  fields: Array<Select | Input>;
+  fields: (Select | Input)[];
   buttonText: string;
   submitHandler?: FormEventHandler<HTMLFormElement>;
 }
