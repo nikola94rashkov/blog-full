@@ -1,8 +1,12 @@
 {
   "dependencies": {
+    "@types/history": "^5.0.0",
+    "@types/react-redux": "^7.1.25",
+    "@types/react-router-dom": "^5.3.3",
     "jsx-runtime": "^1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.2",
     "webpack-5": "^0.0.0"
   },
   "devDependencies": {

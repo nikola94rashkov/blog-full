@@ -1,14 +1,8 @@
 import { Form } from './components/FormComponents';
-import { createArticleFields } from './services/formsData';
+import { createArticleFields } from './staticData';
 
 const App = () => {
-  return (
-    <Form
-      title={createArticleFields.title}
-      fields={createArticleFields.fields}
-      buttonText={createArticleFields.buttonText}
-    />
-  );
+  return <h1>hi</h1>;
 };
 
 export default App;
