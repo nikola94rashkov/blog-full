@@ -1,4 +1,4 @@
-export const createArticleFields = {
+export const articleFields = {
   title: 'Form Create Article',
   fields: [
     {
@@ -8,17 +8,17 @@ export const createArticleFields = {
       testId: 'title'
     },
     {
-      type: 'textarea',
-      label: 'Description',
-      name: 'description',
-      testId: 'description'
-    },
-    {
       type: 'text',
       label: 'Image url',
       name: 'imageUrl',
       testId: 'imageUrl'
+    },
+    {
+      type: 'textarea',
+      label: 'Description',
+      name: 'description',
+      testId: 'description'
     }
   ],
-  buttonText: 'submit'
+  buttonText: 'Create'
 };

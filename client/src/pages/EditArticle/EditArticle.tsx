@@ -1,3 +1,14 @@
+import { Form } from '../../components';
+import { articleFields } from '../../staticData';
+
 export const EditArticle = () => {
-  return <h1>EditArticle</h1>;
+  return (
+    <section>
+      <Form
+        title="Edit Article"
+        fields={articleFields.fields}
+        buttonText={articleFields.buttonText}
+      />
+    </section>
+  );
 };

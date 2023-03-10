@@ -10,6 +10,18 @@ export const navItems = [
   {
     path: '/login',
     text: 'Login'
+  },
+  {
+    path: '/dashboard',
+    text: 'Dashboard'
+  },
+  {
+    path: '/blogs/edit/:id',
+    text: 'Edit'
+  },
+  {
+    path: '/blogs/create',
+    text: 'Create'
   }
 ];
 

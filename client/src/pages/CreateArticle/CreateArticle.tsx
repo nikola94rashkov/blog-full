@@ -1,3 +1,14 @@
+import { articleFields } from '../../staticData';
+import { Form } from '../../components';
+
 export const CreateArticle = () => {
-  return <h1>CreateArticle</h1>;
+  return (
+    <section>
+      <Form
+        title={articleFields.title}
+        fields={articleFields.fields}
+        buttonText={articleFields.buttonText}
+      />
+    </section>
+  );
 };
