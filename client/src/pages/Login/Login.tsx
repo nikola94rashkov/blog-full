@@ -1,3 +1,11 @@
-export const Login = () => {
-  return <h1>Login</h1>;
-};
+import { memo } from 'react';
+import { Form } from '../../components';
+import { loginForm } from '../../staticData';
+
+export const Login = memo(() => {
+  return (
+    <section>
+      <Form title={loginForm.title} fields={loginForm.fields} buttonText={loginForm.buttonText} />
+    </section>
+  );
+});

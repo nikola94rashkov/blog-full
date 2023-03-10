@@ -23,11 +23,11 @@ export const Form = ({ title, fields, buttonText, submitHandler }: FormInterface
                 options={item.options}
               />
             );
-          } else if (item.type === 'text') {
+          } else if (item.type === 'textarea') {
             return (
-              <Input
-                key={item.type + index}
+              <Textarea
                 type={item.type}
+                key={item.type + index}
                 label={item.label}
                 testId={item.testId}
                 name={item.name}
@@ -35,9 +35,9 @@ export const Form = ({ title, fields, buttonText, submitHandler }: FormInterface
             );
           } else {
             return (
-              <Textarea
-                type={item.type}
+              <Input
                 key={item.type + index}
+                type={item.type}
                 label={item.label}
                 testId={item.testId}
                 name={item.name}
