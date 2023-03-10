@@ -1,10 +1,10 @@
 import type { Nav as NavInterface } from '../../types/';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const NavItem = ({ path, text }: NavInterface) => {
   return (
     <li>
-      <Link to={path}>{text}</Link>
+      <NavLink to={path}>{text}</NavLink>
     </li>
   );
 };

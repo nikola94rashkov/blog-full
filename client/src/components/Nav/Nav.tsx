@@ -1,13 +1,14 @@
-import { navItems, navItemsAuthenticated } from '../../staticData';
-import type { Nav as NavInterface } from '../../types/';
+import type { NavItems } from '../../types/';
 import { NavItem } from './NavItem';
 
-export const Nav = (links: NavInterface[]) => {
+export const Nav = ({ links }: NavItems) => {
   return (
-    <ul>
-      {links.map((item) => (
-        <NavItem path={item.path} text={item.text} />
-      ))}
-    </ul>
+    <nav>
+      <ul>
+        {links.map((item) => (
+          <NavItem path={item.path} text={item.text} />
+        ))}
+      </ul>
+    </nav>
   );
 };

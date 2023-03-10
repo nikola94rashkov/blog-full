@@ -1,9 +1,8 @@
 import { memo } from 'react';
 import { Logo, Nav } from '../../components';
 import { navItems, navItemsAuthenticated } from '../../staticData';
-import type { Nav as NavInterface } from '../../types';
 
-export const Header = memo<NavInterface[]>(() => {
+export const Header = memo(() => {
   return (
     <header>
       <Logo />
